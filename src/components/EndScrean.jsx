@@ -12,7 +12,7 @@ const EndScrean = ({ score, restartGame, character, muted }) => {
     const playClickSound = () => {
         if (!muted) {
             const sound = new Howl({
-                src: ['/public/sound/mixkit-video-game-mystery-alert-234.wav'],
+                src: ['/public/sound/click.wav'],
                 volume: 0.6
             })
             sound.play();
@@ -25,7 +25,7 @@ const EndScrean = ({ score, restartGame, character, muted }) => {
                     transition={{ type: spring, stiffness: 100 }}>
                     <div className={`character-avatar large ${character}`}></div>
                 </motion.div>
-                <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}>Game Complete</motion.h1>
+                <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}>Game Complete🧜🏻‍♀</motion.h1>
                 <motion.div className='score-display' initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.4, type: 'spring' }}>
                     <div className='score-value'>{score}</div>
                     <div className='score-label'>Fashion points</div>
