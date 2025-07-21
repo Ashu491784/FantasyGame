@@ -1,0 +1,121 @@
+:root {
+  --primary:rgb(186, 45, 92);
+  --primart-light:rgb(198, 35, 35);
+  --secondary:rgb(211, 33, 173);
+  --accent:#856;
+  --background:rgb(248, 213, 233);
+  --card:rgb(250, 233, 239);
+  --text:rgb(0, 0, 0);
+  --text-light:rgb(104, 17, 46);
+  --shadow:rgb(207, 171, 183);
+  --radius:16px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic  Neue', cursive;
+}
+
+body{
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.app{
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* start screan */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.start-container {
+  max-width: 800px;
+  background: var(--card);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.game-title {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.game-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.character-card{
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.character-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.character-avatar{
+  width: 100px;
+  height: 100px;
+ background-size: cover;
+ border-radius: 50%;
+ margin-bottom: 15px;
+ transition: all 0.3s ease;
+}
+.character-avatar.bella{
+  background-image: url('../public/images/0vb3_tpoc_230710-removebg-preview.png');
+ 
+}
+.character-avatar.shafya{
+  background-image: url('../public/images/5rjg_q2ds_230531-removebg-preview.png');
+
+}
+.character-avatar.keylan{
+  background-image: url('../public/images/9211859-removebg-preview.png');
+
+}
+
+.play-button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
