@@ -4,6 +4,7 @@ import { Howl } from "howler";
 import StartScreen from "./components/StartScreen";
 import EndScrean from "./components/EndScrean";
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import Feedback from "./components/feedback";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App(){
       <AnimatePresence mode="wait">
         {/* <StartScreen/> */}
         <EndScrean/>
+        {/* <Feedback/> */}
       </AnimatePresence>
     </div>
   )
